@@ -1,3 +1,47 @@
-body {
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+h1, p {
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    font-size: 90pt;
+    padding-bottom: 10px;
+}
+
+.background {
+    background-image: url("images/rocky-and-pocky.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255,255,255,0.8);
+    height: 100%;
+    z-index: 10;
+
+    flex-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-transparency {
+    background-color: black;
+    height: 100%;
+    z-index: 1000;
+}
+
+.content-container {
+    margin-top: 225px;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    color: white;
 }
